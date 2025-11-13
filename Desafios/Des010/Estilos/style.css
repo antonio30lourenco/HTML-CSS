@@ -113,7 +113,7 @@ div.video > iframe {
 }
 main {
     background-color: white;
-    min-width: 400px;
+    min-width: 300%;
     max-width: 800px;
     margin: auto;
     padding: 20px;
