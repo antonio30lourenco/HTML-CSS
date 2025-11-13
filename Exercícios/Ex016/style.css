@@ -10,7 +10,8 @@ body {
 }
 main {
     background-color: yellow;
-    width: auto;
+    max-width: 600px;
+    min-width: 500px;
     padding: 10px;
     margin: auto;
     border-radius: 10px;
