@@ -9,18 +9,36 @@
             border: 1px solid black;
             width: 300px;
             height: 300px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: aquamarine;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.24);
+            text-align: center;
+        }
+        #q1 {
+            background-color: beige;
+        }
+        #q2 {
+            background-image: linear-gradient(to bottom, yellow, blue);
+        }
+        #q3{
+            background-image: url('Imagens/pattern001.png');
+            color: white;
+        }
+        body {
+            background-image: url('Imagens/wallpaper001.jpg');
         }
     </style>
 </head>
 <body>
-    <div class="quadrado">
-
+    <div class="quadrado" id="q1">
+        <h2>background-color</h2>
     </div>
-    <div class="quadrado">
-
+    <div class="quadrado" id="q2">
+        <h2>background-image Gradiante</h2>
     </div>
-    <div class="quadrado">
-
+    <div class="quadrado" id="q3">
+        <h2>background-image Url</h2>
     </div>
 </body>
 </html>
