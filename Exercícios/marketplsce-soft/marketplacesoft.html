@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace SOFT</title>
+    <link rel="shortcut icon" href="marketplacesoft.io.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><h1>Marketplace SOFT</h1></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="marketplacesoft.html">Início</a></li>
+                <li><a href="index01.html">Concursos</a></li>
+                <li><a href="index.html">Vagas</a></li>
+                <li><a href="index02.html">Bolsas</a></li>
+                <li><a href="index03.html">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </div>
+</header>
+
+<!-- Slider / Destaques -->
+<section class="slider">
+    <div class="slide active">
+        <h2>Últimos Concursos Públicos</h2>
+        <p>Fique atualizado sobre todas as oportunidades em Angola.</p>
+    </div>
+    <div class="slide">
+        <h2>Novas Vagas de Emprego</h2>
+        <p>Encontre oportunidades que se encaixam no seu perfil profissional.</p>
+    </div>
+    <div class="slide">
+        <h2>Bolsas de Estudo Internacionais</h2>
+        <p>Descubra como estudar fora sem gastar nada.</p>
+    </div>
+</section>
+
+<!-- Main -->
+<main>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Bem-vindo à Marketplace SOFT</h1>
+            <p>O portal completo de concursos, vagas e bolsas de estudo em Angola e no mundo.</p>
+            <a href="#services" class="btn">Explorar Agora</a>
+        </div>
+    </section>
+
+    <!-- Serviços / Destaques -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="service-card">
+                <h2>Concursos Públicos</h2>
+                <p>Informações completas e atualizadas para você se preparar e garantir sua vaga.</p>
+            </div>
+            <div class="service-card">
+                <h2>Vagas de Emprego</h2>
+                <p>Oportunidades reais de trabalho para todos os níveis profissionais.</p>
+            </div>
+            <div class="service-card">
+                <h2>Bolsas de Estudo</h2>
+                <p>Descubra bolsas nacionais e internacionais para expandir seus estudos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artigos / Notícias -->
+    <section class="articles">
+        <div class="container">
+            <article>
+                <h3>Dicas para Passar em Concursos</h3>
+                <p>Aprenda técnicas de estudo eficientes e conquiste sua vaga pública.</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article>
+                <h3>Últimas Vagas de Emprego</h3>
+                <p>Confira as vagas mais recentes e saiba como se candidatar.</p>
+                <a href="#">Leia mais</a>
+            </article>
+            <article>
+                <h3>Bolsas de Estudo Internacionais</h3>
+                <p>Saiba como se inscrever em programas de bolsas no exterior.</p>
+                <a href="#">Leia mais</a>
+            </article>
+        </div>
+    </section>
+
+     <section id="loja" class="store">
+        <div class="container">
+            <h2>Materiais Disponíveis</h2>
+            <div class="store-products">
+
+                <div class="product-card" data-name="eBook PGR Angola 2025" data-price="2500" data-download="ebooks/ebook-pgr.pdf">
+                    <h3>eBook PGR Angola 2025</h3>
+                    <p>Guia completo para passar no concurso público da PGR Angola.</p>
+                    <p class="price">Kz 2.500</p>
+                    <button class="btn-buy">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card" data-name="eBook AIPEX - Auxiliar Administrativo" data-price="2000" data-download="ebooks/ebook-aipex.pdf">
+                    <h3>eBook AIPEX - Auxiliar Administrativo</h3>
+                    <p>Conteúdo completo para o concurso AIPEX 2025.</p>
+                    <p class="price">Kz 2.000</p>
+                    <button class="btn-buy">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card" data-name="Pacote de Questões" data-price="3000" data-download="ebooks/pacote-questoes.pdf">
+                    <h3>Pacote de Questões</h3>
+                    <p>Mais de 500 questões comentadas para praticar.</p>
+                    <p class="price">Kz 3.000</p>
+                    <button class="btn-buy">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+    </section>
+            <!-- Carrinho -->
+            <div class="cart">
+                <h3>Carrinho de Compras</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="cart-total">Kz 0</span></p>
+                <button id="checkout" class="btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <!-- Formulário de Contato -->
+    <section class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Ou entre em contato pelo WhatsApp: <a href="https://wa.me/244932407503" target="_blank">+244 932 407 503</a></p>
+        </div>
+    </section>
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container">
+        <p>© 2025 Marketplace SOFT. Todos os direitos reservados.</p>
+        <p>Redes sociais:
+            <a href="https://www.facebook.com/profile.php?id=61559726520949">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p>Contato: <a href="mailto:marketiplacesoft@gmail.com">marketiplacesoft@gmail.com</a></p>
+    </div>
+</footer>
+
+<!-- Script Menu Mobile + Slider -->
+<script>
+    // Menu mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    // Carrinho
+    const cart = [];
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    function updateCart() {
+        cartItems.innerHTML = '';
+        let total = 0;
+        cart.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - Kz ${item.price}`;
+            const removeBtn = document.createElement('button');
+            removeBtn.textContent = 'Remover';
+            removeBtn.style.marginLeft = '10px';
+            removeBtn.onclick = () => {
+                cart.splice(index, 1);
+                updateCart();
+            };
+            li.appendChild(removeBtn);
+            cartItems.appendChild(li);
+            total += item.price;
+        });
+        cartTotal.textContent = `Kz ${total}`;
+    }
+
+    const buyButtons = document.querySelectorAll('.btn-buy');
+    buyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productCard = button.parentElement;
+            const name = productCard.getAttribute('data-name');
+            const price = parseInt(productCard.getAttribute('data-price'));
+            const download = productCard.getAttribute('data-download');
+            cart.push({ name, price, download });
+            updateCart();
+        });
+    });
+
+    // Finalizar compra
+    const checkout = document.getElementById('checkout');
+    checkout.addEventListener('click', () => {
+        if(cart.length === 0){
+            alert('Seu carrinho está vazio!');
+            return;
+        }
+        // Aqui você pode integrar o Multicaixa Express
+        // Para teste, simulamos pagamento e download
+        cart.forEach(item => {
+            alert(`Pagamento concluído!\nVocê pode baixar: ${item.name}`);
+            window.open(item.download, '_blank');
+        });
+        cart.length = 0;
+        updateCart();
+    });
+
+    const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function changeSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+setInterval(changeSlide, 3000); // muda a cada 3 segundos
+
+// este é meu site
+</script>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="marketplacesoft.io.ico" type="image/x-icon">
+    <title>Marketplace SOFT - Loja Avançada</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo"><a href="#">Marketplace SOFT</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Concursos</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Bolsas</a></li>
+                <li><a href="#loja">Loja</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container">
+            <h1>Marketplace SOFT</h1>
+            <p>Compre eBooks, materiais de estudo e prepare-se para concursos em Angola.</p>
+            <a href="#loja" class="btn">Ir para Loja</a>
+        </div>
+    </section>
+
+    <!-- Loja Avançada -->
+    <section id="loja" class="store">
+        <div class="container">
+            <h2>Materiais Disponíveis</h2>
+            <div class="store-products">
+
+                <div class="product-card" data-name="eBook PGR Angola 2025" data-price="2500" data-download="ebooks/ebook-pgr.pdf">
+                    <h3>eBook PGR Angola 2025</h3>
+                    <p>Guia completo para passar no concurso público da PGR Angola.</p>
+                    <p class="price">Kz 2.500</p>
+                    <button class="btn-buy">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card" data-name="eBook AIPEX - Auxiliar Administrativo" data-price="2000" data-download="ebooks/ebook-aipex.pdf">
+                    <h3>eBook AIPEX - Auxiliar Administrativo</h3>
+                    <p>Conteúdo completo para o concurso AIPEX 2025.</p>
+                    <p class="price">Kz 2.000</p>
+                    <button class="btn-buy">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="product-card" data-name="Pacote de Questões" data-price="3000" data-download="ebooks/pacote-questoes.pdf">
+                    <h3>Pacote de Questões</h3>
+                    <p>Mais de 500 questões comentadas para praticar.</p>
+                    <p class="price">Kz 3.000</p>
+                    <button class="btn-buy">Adicionar ao Carrinho</button>
+                </div>
+
+            </div>
+
+            <!-- Carrinho -->
+            <div class="cart">
+                <h3>Carrinho de Compras</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: <span id="cart-total">Kz 0</span></p>
+                <button id="checkout" class="btn">Finalizar Compra</button>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Marketplace SOFT. Todos os direitos reservados.</p>
+        <p>Contato: <a href="mailto:marketiplacesoft@gmail.com">marketiplacesoft@gmail.com</a></p>
+    </div>
+</footer>
+
+<script>
+    // Menu mobile
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+    // Carrinho
+    const cart = [];
+    const cartItems = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+
+    function updateCart() {
+        cartItems.innerHTML = '';
+        let total = 0;
+        cart.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} - Kz ${item.price}`;
+            const removeBtn = document.createElement('button');
+            removeBtn.textContent = 'Remover';
+            removeBtn.style.marginLeft = '10px';
+            removeBtn.onclick = () => {
+                cart.splice(index, 1);
+                updateCart();
+            };
+            li.appendChild(removeBtn);
+            cartItems.appendChild(li);
+            total += item.price;
+        });
+        cartTotal.textContent = `Kz ${total}`;
+    }
+
+    const buyButtons = document.querySelectorAll('.btn-buy');
+    buyButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const productCard = button.parentElement;
+            const name = productCard.getAttribute('data-name');
+            const price = parseInt(productCard.getAttribute('data-price'));
+            const download = productCard.getAttribute('data-download');
+            cart.push({ name, price, download });
+            updateCart();
+        });
+    });
+
+    // Finalizar compra
+    const checkout = document.getElementById('checkout');
+    checkout.addEventListener('click', () => {
+        if(cart.length === 0){
+            alert('Seu carrinho está vazio!');
+            return;
+        }
+        // Aqui você pode integrar o Multicaixa Express
+        // Para teste, simulamos pagamento e download
+        cart.forEach(item => {
+            alert(`Pagamento concluído!\nVocê pode baixar: ${item.name}`);
+            window.open(item.download, '_blank');
+        });
+        cart.length = 0;
+        updateCart();
+    });
+</script>
+
+</body>
+</html>

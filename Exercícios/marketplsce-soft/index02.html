@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsas de Estudos</title>
+    <link rel="shortcut icon" href="marketplacesoft.io.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><h1>Marketplace SOFT</h1></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="marketplacesoft.html">Início</a></li>
+                <li><a href="index01.html">Concursos</a></li>
+                <li><a href="index.html">Vagas</a></li>
+                <li><a href="index02.html">Bolsas</a></li>
+                <li><a href="index03.html">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </div>
+</header>
+<main>
+
+    <section class="bolsas-hero">
+    <h1>Bolsas de Estudo</h1>
+    <p>Descubra oportunidades nacionais e internacionais para transformar o seu futuro académico.</p>
+
+    <div class="search-container">
+        <input type="text" placeholder="Pesquisar por país, instituição ou nível..." class="search-input">
+        <button class="search-btn">Pesquisar</button>
+    </div>
+</section>
+<section class="filtros-bolsas">
+    <select>
+        <option>País</option>
+        <option>Portugal</option>
+        <option>Brasil</option>
+        <option>China</option>
+        <option>Estados Unidos</option>
+    </select>
+
+    <select>
+        <option>Nível Académico</option>
+        <option>Licenciatura</option>
+        <option>Mestrado</option>
+        <option>Doutoramento</option>
+        <option>Cursos Curto</option>
+    </select>
+
+    <select>
+        <option>Tipo de Bolsa</option>
+        <option>Bolsa Completa</option>
+        <option>Bolsa Parcial</option>
+        <option>Bolsa Online</option>
+    </select>
+
+    <button class="btn-filtrar">Filtrar</button>
+</section>
+
+<section class="bolsas-lista">
+
+    <div class="bolsa-card">
+        <h3>Bolsas Chevening – Reino Unido</h3>
+        <p><strong>Nível:</strong> Mestrado</p>
+        <p><strong>Tipo:</strong> Bolsa Completa</p>
+
+        <div class="etiquetas">
+            <span class="etq completa">Completa</span>
+            <span class="etq internacional">Internacional</span>
+        </div>
+
+        <a href="#" class="btn-ver-bolsa">Ver Detalhes</a>
+    </div>
+
+    <div class="bolsa-card">
+        <h3>Bolsas Santander – Cursos Online</h3>
+        <p><strong>Nível:</strong> Formação Curta</p>
+        <p><strong>Tipo:</strong> Bolsa Parcial</p>
+
+        <div class="etiquetas">
+            <span class="etq parcial">Parcial</span>
+            <span class="etq online">Online</span>
+        </div>
+
+        <a href="#" class="btn-ver-bolsa">Ver Detalhes</a>
+    </div>
+
+</section>
+
+<div class="paginacao">
+    <a href="#">Anterior</a>
+    <a href="#" class="ativo">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">Próximo</a>
+</div>
+
+     <section class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Ou entre em contato pelo WhatsApp: <a href="https://wa.me/244932407503" target="_blank">+244 932 407 503</a></p>
+        </div>
+    </section>
+
+    <footer>
+    <div class="container">
+        <p>© 2025 Marketplace SOFT. Todos os direitos reservados.</p>
+        <p>Redes sociais:
+            <a href="https://www.facebook.com/profile.php?id=61559726520949">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p>Contato: <a href="mailto:marketiplacesoft@gmail.com">marketiplacesoft@gmail.com</a></p>
+    </div>
+</footer>
+</main>
+<script>
+    
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+</script>
+</body>
+</html>

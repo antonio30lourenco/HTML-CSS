@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concursos Públicos</title>
+    <link rel="shortcut icon" href="marketplacesoft.io.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <header>
+    <div class="container">
+        <div class="logo">
+            <a href="#"><h1>Marketplace SOFT</h1></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="marketplacesoft.html">Início</a></li>
+                <li><a href="index01.html">Concursos</a></li>
+                <li><a href="index.html">Vagas</a></li>
+                <li><a href="index02.html">Bolsas</a></li>
+                <li><a href="index03.html">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </div>
+</header>
+
+    <section class="concursos-hero">
+    <h1>Concursos Públicos em Angola</h1>
+    <p>Encontre aqui os concursos mais recentes, atualizados e confiáveis.</p>
+
+    <div class="search-container">
+        <input type="text" placeholder="Pesquisar concurso por província ou instituição..." class="search-input">
+        <button class="search-btn">Pesquisar</button>
+    </div>
+</section>
+
+<section class="filtros">
+    <select>
+        <option>Província</option>
+        <option>Luanda</option>
+        <option>Benguela</option>
+        <option>Huíla</option>
+        <option>Huambo</option>
+        <option>Namibe</option>
+        <option>Bié</option>
+        <option>Cunene</option>
+        <option>Cabinda</option>
+        <option>Malanje</option>
+        <option>Uíge</option>
+        <option>Zaire</option>
+        <option>Bengo</option>
+        <option>Moxico</option>
+        <option>Cuando</option>
+        <option>Cubango</option>
+        <option>Cuanza Norte</option>
+        <option>Cuanza Sul</option>
+        <option>Lunda Norte</option>
+        <option>Lunda Sul</option>
+        <option>Icolo e Bengo</option>
+        <option>Moxico Leste</option>
+
+    </select>
+
+    <select>
+        <option>Categoria</option>
+        <option>9ª Classe</option>
+        <option>Técnico Médio</option>
+        <option>Técnico Superior</option>
+        <option>Auxiliar</option>
+    </select>
+
+    <select>
+        <option>Estado</option>
+        <option>Aberto</option>
+        <option>Encerrado</option>
+        <option>Em Análise</option>
+        <option>Resultados</option>
+    </select>
+
+    <button class="btn-filtrar">Filtrar</button>
+</section>
+
+<section class="concursos-lista">
+
+    <div class="card-concurso">
+        <h3>Concurso Público da PGR 2025</h3>
+        <p><strong>Província:</strong> Luanda</p>
+        <p><strong>Vagas:</strong> 350</p>
+        <p><strong>Estado:</strong> Aberto</p>
+
+        <a href="#" class="btn-ver-detalhes">Ver Detalhes</a>
+    </div>
+
+    <div class="card-concurso">
+        <h3>Concurso da AIPEX - Auxiliar Administrativo</h3>
+        <p><strong>Província:</strong> Luanda</p>
+        <p><strong>Vagas:</strong> 50</p>
+        <p><strong>Estado:</strong> Encerrado</p>
+
+        <a href="#" class="btn-ver-detalhes encerrado">Encerrado</a>
+    </div>
+
+</section>
+
+<div class="paginacao">
+    <a href="#">Anterior</a>
+    <a href="#" class="ativo">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">Próximo</a>
+</div>
+
+<section class="contact">
+        <div class="container">
+            <h2>Fale Conosco</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <p>Ou entre em contato pelo WhatsApp: <a href="https://wa.me/244932407503" target="_blank">+244 932 407 503</a></p>
+        </div>
+    </section>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Marketplace SOFT. Todos os direitos reservados.</p>
+        <p>Redes sociais:
+            <a href="https://www.facebook.com/profile.php?id=61559726520949">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">LinkedIn</a>
+        </p>
+        <p>Contato: <a href="mailto:marketiplacesoft@gmail.com">marketiplacesoft@gmail.com</a></p>
+    </div>
+</footer>
+
+
+<script>
+    
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.menu');
+
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+    });
+
+</script>
+
+</body>
+</html>
