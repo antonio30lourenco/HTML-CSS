@@ -71,9 +71,14 @@ a:hover {
     background-color: rgb(68, 64, 64);
     color: white;
     font-family: "Sriracha", cursive;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+
 }
 .imagem > p {
     background-color: rgba(0, 0, 0, 0.418);
+    width: 300px;
+    box-shadow: 1px 1px 0px black;
     
 }
 section {
@@ -81,7 +86,20 @@ section {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-    font-size: 20px
+    font-size: 20px;
+}
+section > p {
+    padding-bottom: 1.5em;
+}
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
 }
 footer {
     color: white;
