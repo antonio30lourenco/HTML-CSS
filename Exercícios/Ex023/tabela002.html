@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        caption {
+            padding: 10px;
+            background-color: rgb(139, 231, 139);
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 6px;
+            
+        }
+        thead {
+            background-color: green;
+            color: white;
+        }
+        tfoot {
+            background-color: rgb(75, 231, 75);
+        }
+        tbody > tr:nth-child(2n) {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Usos de Tabelas Grandes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td>000000000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <th>000000000</th>
+            </tr>
+        </tfoot>
+        <caption>População das unidades Federativas do Brasil</caption>
+    </table>
+</body>
+</html>
