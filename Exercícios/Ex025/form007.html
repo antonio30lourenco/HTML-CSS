@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-ao">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplos de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="iest">Províncias:</label>
+            <select name="est" id="iest">
+                <optgroup label="Região Desenvolvida">
+                    <option value="" selected>Escolha a sua província</option>
+                    <option value="HA">Huíla</option>
+                    <option value="NA">Namibe</option>
+                    <option value="LA">Luanda</option>
+                </optgroup>
+                <optgroup label="Região em Desenvolvimento">
+                    <option value="BA">Benguela</option>
+                    <option value="CA">Cabinda</option>
+                    <option value="CN">Cunene</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilista</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="isms">Mensagem:</label>
+           <textarea name="sms" id="isms" cols="30" rows="10" placeholder="Digite a sua mensagem aqui"></textarea>
+           <textarea name="sms" id="isms">Estados Unidos da América</textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
