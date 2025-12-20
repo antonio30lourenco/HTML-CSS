@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+/*ESTILOS PARA TELA*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font: 1em sans-serif;
+}
