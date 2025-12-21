@@ -9,3 +9,27 @@
 html {
     font: 1em sans-serif;
 }
+
+header {
+    background-color: aqua;
+}
+header > h1 {
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    background-color: aquamarine;
+}
+
+nav li {
+    display: inline-block;
+    padding: 10px;
+    background-color: rgb(77, 131, 113);
+    color: white;
+}
+
+article {
+    width: 700px;
+    margin: auto;
+    display: block;
+}
