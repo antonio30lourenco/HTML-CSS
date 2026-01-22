@@ -38,25 +38,10 @@ h1 {
 
 img {
     display: block;
-    margin: auto;
-}
-
-#telefone {
-    display: block;
-}
-
-#tablete {
-    display: none;
-}
-
-#impressora {
-    display: none;
-}
-
-#pc {
-    display: none;
-}
-
-#tv {
-    display: none;
-}
+    margin: auto;}
+    
+#telefone {display: block;}
+#tablete {display: none;}
+#impressora {display: none;}
+#pc {display: none;}
+#tv {display: none;}
