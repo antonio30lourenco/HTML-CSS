@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background: #0a7c4a;
+    padding: 15px;
+    position: relative;
+}
+
+/* Esconde o checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Ícone hambúrguer */
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    height: 4px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Menu */
+.menu {
+    list-style: none;
+    background: #0a7c4a;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+.menu li {
+    text-align: center;
+    padding: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Quando clicar no menu */
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        justify-content: flex-end;
+    }
+
+    .menu li {
+        padding: 0 15px;
+    }
+}
