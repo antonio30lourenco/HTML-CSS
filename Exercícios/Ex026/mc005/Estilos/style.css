@@ -34,6 +34,10 @@ header {
     gap: 5px;
 }
 
+main {
+    width: 768px;
+}
+
 .menu-icon span {
     height: 4px;
     background-color: white;
@@ -78,7 +82,7 @@ menu > ul > li > a {
     display: block;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .menu-icon {
         display: none;
     }
@@ -91,6 +95,11 @@ menu > ul > li > a {
 
     .menu li {
         padding: 0 15px;
+        display: inline-block;
+    }
+
+    main {
+        width: 768;
     }
 }
 
