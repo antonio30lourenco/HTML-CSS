@@ -2,8 +2,9 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 html, body {
@@ -15,29 +16,82 @@ header {
     background-color: rgb(2, 190, 2);
 }
 
+.navbar {
+    background-color: #0a7c4a;
+    padding: 15px;
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-icon span {
+    height: 4px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu {
+    list-style: none;
+    background-color: #0a7c4b05;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.menu li {
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    width: 150px;
+    
+}
+
 h1 {
     padding: 10px;
     text-align: center;
     color: white;
 }
 
-menu {
-    display: block;
-}
-
-menu > ul {
-    list-style: none;
-    
-}
-
 menu > ul > li > a {
     display: block;
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     background-color: rgb(39, 138, 39);
     color: white;
-    text-align: center;
-    border-top: 2px solid rgb(73, 150, 73);
+    border-radius: 5px;
+}
+
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        position: static;
+        justify-content: flex-end;
+    }
+
+    .menu li {
+        padding: 0 15px;
+    }
 }
 
 a:hover {
@@ -60,7 +114,7 @@ h2 {
 
 p {
     text-align: justify;
-    margin-bottom: 10px;
+    /*margin-bottom: 5px;*/
     text-indent: 20px;
     padding: 10px;
 }
